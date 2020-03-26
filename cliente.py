@@ -8,9 +8,9 @@ class Client:
             self.sock.send(input().encode('utf-8'))
     def __init__(self):
         self.sock.connect(('localhost', 9999))
-        iThread = threading.Thread(target=self.sendMsg)
-        iThread.daemon = True
-        iThread.start()
+        sendMThread = threading.Thread(target=self.sendMsg)
+        sendMThread.daemon = True
+        sendMThread.start()
 
         while True:
             data = self.sock.recv(1024)
