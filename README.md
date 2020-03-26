@@ -1,2 +1,2 @@
 # dnlgomesl
-Exemplo - Servidor/Cliente
+Exemplo - Servidor/Cliente em python
